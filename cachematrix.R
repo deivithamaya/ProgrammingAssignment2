@@ -3,6 +3,11 @@
 
 ## Write a short comment describing this function
 
+# with getM returns the matrix
+# with setM save the new matrix
+# with setInvert send the inverse
+# with getInvert returns the inverse
+
 makeCacheMatrix <- function(x = matrix()) {
   i<-NULL
   setM<-function(nM){
@@ -19,7 +24,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
   i<-x$getInvert()
   if(!is.null(i)){
     return(i)
